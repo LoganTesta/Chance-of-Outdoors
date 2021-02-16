@@ -42,16 +42,22 @@ Color 4:
 
 :root {
     /*Header*/
-    --branding--title--font-size-mobile: var(--heading--font-size-h3);
-    --branding--title--font-size: var(--global--font-size-xl);  
+    --branding--title--font-size-mobile: var(--heading--font-size-h2);
+    --branding--title--font-size: var(--global--font-size-xxl);  
 }
 
 
-/*General styling*/
+/*Basic styling*/
 
 
 /*Header*/
 .site-title { font-size: var(--branding--title--font-size-mobile); }
+
+
+/*General styling*/
+:root .is-gigantic-text, 
+:root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
+.singular .entry-title { font-size: var(--global--font-size-xl); }
 
 
 
