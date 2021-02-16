@@ -1,0 +1,61 @@
+/*
+Theme Name: twentytwentyone Child
+Description: A child theme of the Twenty Twenty One WP Theme
+Author: Me
+Author URI: tualatintopbakery.com
+Template: twentytwentyone
+Version: 1.0
+*/
+
+
+
+/***############### General Styling Reset and Setup: reset, grid, typography, general classes and divs.  Mobile-first styling setup. ***/
+/*No Reset styles*/
+
+/*For ease of development and maintainability, combine an element's width, padding, margin, and border into a final value, and enable this on all elements. */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+/* General Resuable Classes */
+.sr-only { display: block; width: 0; height: 0; opacity: 0; }
+.width-100-percent { width: 100%; }
+.clear-both { clear: both; }
+
+/*No typography, no general styling classes included*/
+
+/***########## End of General Styling Reset and Setup ****/
+
+
+
+
+
+
+
+/***############### Beginning of Website-specific style sheet. ****/
+/*Site color scheme.  Adjacent color scheme, with 45 degrees variation.  */
+/*
+Color 1: 
+Color 2: 
+Color 3: 
+Color 4:
+*/
+
+:root {
+    /*Header*/
+    --branding--title--font-size-mobile: var(--heading--font-size-h3);
+    --branding--title--font-size: var(--global--font-size-xl);  
+}
+
+
+/*General styling*/
+
+
+/*Header*/
+.site-title { font-size: var(--branding--title--font-size-mobile); }
+
+
+
+@media only screen and (min-width: 482px){
+    /*Header*/
+    .site-title { font-size: var(--branding--title--font-size); }  
+}
