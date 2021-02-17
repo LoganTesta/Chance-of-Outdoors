@@ -55,6 +55,8 @@ Color 4:
 
 
 /*General styling*/
+:root .is-huge-text, 
+:root .has-huge-font-size { font-size: var(--global--font-size-xl); }
 :root .is-gigantic-text, 
 :root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
 .singular .entry-title,
