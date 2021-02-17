@@ -51,6 +51,8 @@ Color 4:
 
 
 /*Header*/
+.site-header { display: block; max-width: 100%; padding-bottom: calc(4 * var(--global--spacing-vertical)); }
+.header-inner-wrapper { display: flex; align-items: flex-start; flex-wrap: wrap; row-gap: var(--global--spacing-vertical); margin-left: auto; margin-right: auto; }
 .site-title { font-size: var(--branding--title--font-size-mobile); }
 
 
@@ -71,6 +73,8 @@ Color 4:
 
 @media only screen and (min-width: 482px){
     /*Header*/
+    .site-header { padding-bottom: calc(6 * var(--global--spacing-vertical)); }
+    .header-inner-wrapper { max-width: var(--responsive--alignwide-width); }
     .site-title { font-size: var(--branding--title--font-size); }
     
     
@@ -78,4 +82,11 @@ Color 4:
     .singular .entry-title,
     .entry-title { font-size: var(--global--font-size-lg); }
     
+}
+
+
+
+@media only screen and (min-width: 1200px){
+    /*Header*/
+    .site-header { padding-bottom: calc(10 * var(--global--spacing-vertical)); }
 }
