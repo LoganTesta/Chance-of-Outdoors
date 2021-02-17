@@ -42,8 +42,8 @@ Color 4:
 
 :root {
     /*Header*/
-    --branding--title--font-size-mobile: var(--heading--font-size-h2);
-    --branding--title--font-size: var(--global--font-size-xxl);  
+    --branding--title--font-size-mobile: var(--heading--font-size-h4);
+    --branding--title--font-size: 3rem;  
 }
 
 
@@ -57,11 +57,23 @@ Color 4:
 /*General styling*/
 :root .is-gigantic-text, 
 :root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
-.singular .entry-title { font-size: var(--global--font-size-xl); }
+.singular .entry-title,
+.entry-title { font-size: var(--global--font-size-lg); }
+
+
+
+/*Footer*/
+.site-footer > .site-info .site-name { font-size: var(--global--font-size-lg); }
 
 
 
 @media only screen and (min-width: 482px){
     /*Header*/
-    .site-title { font-size: var(--branding--title--font-size); }  
+    .site-title { font-size: var(--branding--title--font-size); }
+    
+    
+    /*General styling*/
+    .singular .entry-title,
+    .entry-title { font-size: var(--global--font-size-lg); }
+    
 }
