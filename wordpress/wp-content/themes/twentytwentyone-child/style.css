@@ -69,6 +69,7 @@ Color 4:
 
 /*Footer*/
 .site-footer > .site-info .site-name { font-size: var(--global--font-size-lg); }
+.site-footer > .site-info .copyright-info { margin-top: calc(0.5 * var(--global--spacing-vertical)); }    
 
 
 
@@ -83,6 +84,13 @@ Color 4:
     .singular .entry-title,
     .entry-title { font-size: var(--global--font-size-lg); }
     
+}
+
+
+
+@media only screen and (min-width: 822px){
+    /*Footer*/
+    .site-footer > .site-info .copyright-info { margin-top: initial; margin-left: auto; }
 }
 
 
