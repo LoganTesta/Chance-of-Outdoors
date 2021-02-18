@@ -57,6 +57,14 @@ Color 4:
 .site-description { font-weight: 600; color: #ffffff; }
 
 
+/*Content*/
+
+
+/*Footer*/
+.site-footer > .site-info .site-name { font-size: var(--global--font-size-lg); }
+.site-footer > .site-info .copyright-info { margin-top: calc(0.5 * var(--global--spacing-vertical)); }   
+
+
 /*General styling*/
 :root .is-huge-text, 
 :root .has-huge-font-size { font-size: var(--global--font-size-xl); }
@@ -64,12 +72,6 @@ Color 4:
 :root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
 .singular .entry-title,
 .entry-title { font-size: var(--global--font-size-lg); }
-
-
-
-/*Footer*/
-.site-footer > .site-info .site-name { font-size: var(--global--font-size-lg); }
-.site-footer > .site-info .copyright-info { margin-top: calc(0.5 * var(--global--spacing-vertical)); }    
 
 
 
@@ -98,4 +100,8 @@ Color 4:
 @media only screen and (min-width: 1200px){
     /*Header*/
     .site-header { padding-bottom: calc(10 * var(--global--spacing-vertical)); }
+    
+    
+    /*Content*/
+    .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) { max-width: var(--responsive--alignwide-width); }
 }
