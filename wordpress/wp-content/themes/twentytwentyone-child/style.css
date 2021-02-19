@@ -63,7 +63,10 @@ Color 4: #34595f;
 /*Header*/
 .site-header { display: block; max-width: 100%; padding-bottom: calc(4 * var(--global--spacing-vertical)); }
 .header-inner-wrapper { display: flex; align-items: flex-start; flex-wrap: wrap; row-gap: var(--global--spacing-vertical); margin-left: auto; margin-right: auto; }
-.site-title { font-size: var(--branding--title--font-size-mobile); color: #ffffff; }
+.site-title { font-size: var(--branding--title--font-size-mobile); color: rgba(255, 255, 255, 1); }
+.site-title > a { text-decoration-color: #ffffff; text-decoration-thickness: 3px; }
+.site-title a:hover, 
+.site-title a:focus { color: rgba(255, 255, 255, 0.7); }
 .site-description { font-weight: 600; color: #ffffff; }
 
 
@@ -101,6 +104,11 @@ Color 4: #34595f;
 
 
 @media only screen and (min-width: 822px){
+    /*Header*/
+    .site-description { font-size: var(--global--font-size-md); }
+    
+    
+    
     /*Footer*/
     .site-footer > .site-info .copyright-info { margin-top: initial; margin-left: auto; }
 }
