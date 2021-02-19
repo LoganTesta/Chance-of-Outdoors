@@ -71,7 +71,11 @@ Color 4: #34595f;
 
 
 /*Nav*/
-.primary-navigation a:hover, .primary-navigation a:link, .primary-navigation a:visited { color: rgba(255, 255, 255, 1); }
+.primary-navigation a:hover, 
+.primary-navigation a:link, 
+.primary-navigation a:visited { color: rgba(255, 255, 255, 1); }
+
+.menu-button-container .button.button { color: rgba(255, 255, 255, 1); }
 
 
 /*Content*/
