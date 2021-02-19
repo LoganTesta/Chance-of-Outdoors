@@ -44,6 +44,9 @@ Color 4:
     /*Header*/
     --branding--title--font-size-mobile: var(--heading--font-size-h4);
     --branding--title--font-size: 3rem;  
+    
+    /*Colors*/
+    --global--color-gray: #9b7653;
 }
 
 
