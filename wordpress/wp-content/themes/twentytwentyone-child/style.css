@@ -32,21 +32,28 @@ html { box-sizing: border-box; }
 
 
 /***############### Beginning of Website-specific style sheet. ****/
-/*Site color scheme.  Adjacent color scheme, with 45 degrees variation.  */
+/*Site color scheme.  Tetrad color scheme, with 30 degrees variation.  */
 /*
-Color 1: 
-Color 2: 
-Color 3: 
-Color 4:
+Color 1: #9b7653
+Color 2: #3e4869;
+Color 3: #9b8553;
+Color 4: #34595f;
 */
 
 :root {
+    /*Brand colors*/
+    --color-1: #9b7653;
+    --color-2: #3e4869;
+    --color-3: #9b8553;
+    --color-4: #34595f;
+    
+    /*Brand Theme Conversion*/
+    --global--color-gray: var(--color-1);
+    
     /*Header*/
     --branding--title--font-size-mobile: var(--heading--font-size-h4);
     --branding--title--font-size: 3rem;  
     
-    /*Colors*/
-    --global--color-gray: #9b7653;
 }
 
 
@@ -74,7 +81,7 @@ Color 4:
 :root .is-gigantic-text, 
 :root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
 .singular .entry-title,
-.entry-title { font-size: var(--global--font-size-lg); }
+.entry-title { font-size: var(--global--font-size-lg); color: var(--color-2); }
 
 
 
@@ -87,7 +94,7 @@ Color 4:
     
     /*General styling*/
     .singular .entry-title,
-    .entry-title { font-size: var(--global--font-size-lg); }
+    .entry-title { font-size: var(--global--font-size-xl); }
     
 }
 
