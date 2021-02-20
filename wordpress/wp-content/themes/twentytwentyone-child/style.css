@@ -73,9 +73,10 @@ Color 4: #34595f;
 /*Nav*/
 .primary-navigation a:hover, 
 .primary-navigation a:link, 
-.primary-navigation a:visited { color: rgba(255, 255, 255, 1); }
+.primary-navigation a:visited { color: rgba(0, 0, 0, 1); transition: 0.1s ease-in; }
+.primary-navigation a:focus:not(.wp-block-button__link):not(.wp-block-file__button) { outline: none; background: none; }
 
-.menu-button-container .button.button { color: rgba(255, 255, 255, 1); }
+.menu-button-container .button.button { color: var(--color-1); }
 
 
 /*Content*/
@@ -102,6 +103,14 @@ Color 4: #34595f;
     .header-inner-wrapper { }
     .site-title { font-size: var(--branding--title--font-size); }
     .site-description { font-size: var(--global--font-size-md); }
+    
+    
+    /*Nav*/
+    .primary-navigation a:hover, 
+    .primary-navigation a:link, 
+    .primary-navigation a:visited { color: rgba(255, 255, 255, 1); }
+    .primary-navigation a:hover,
+    .primary-navigation a:focus:not(.wp-block-button__link):not(.wp-block-file__button) { background: rgba(155, 118, 83, 0.7); transition: 0.1s ease-in; }
     
     
     /*General styling*/
