@@ -34,10 +34,10 @@ html { box-sizing: border-box; }
 /***############### Beginning of Website-specific style sheet. ****/
 /*Site color scheme.  Tetrad color scheme, with 30 degrees variation.  */
 /*
-Color 1: #9b7653
-Color 2: #3e4869;
-Color 3: #9b8553;
-Color 4: #34595f;
+Color 1: #9b7653     (155, 118, 83)   earth brown
+Color 2: #3e4869     (62, 72, 105)    dark blue
+Color 3: #9b8553     (155, 133, 83)   light brown
+Color 4: #34595f     (52, 89, 95)     dark blue-green
 */
 
 :root {
@@ -63,11 +63,12 @@ Color 4: #34595f;
 /*Header*/
 .site-header { display: block; max-width: 100%; padding-bottom: calc(4 * var(--global--spacing-vertical)); }
 .header-inner-wrapper { display: flex; align-items: flex-start; flex-wrap: wrap; row-gap: var(--global--spacing-vertical); max-width: var(--responsive--alignwide-width); margin-left: auto; margin-right: auto; }
-.site-title { font-size: var(--branding--title--font-size-mobile); color: rgba(255, 255, 255, 1); }
+.site-branding { padding: 20px; border: 5px solid rgba(42, 42, 42, 1); border-radius: 3px; background-color: rgba(155, 118, 83, 0.94); }
+.site-title { font-size: var(--branding--title--font-size-mobile); font-weight: 600; text-shadow: 1.5px 2px rgba(42, 42, 42, 1); color: rgba(255, 255, 255, 1); }
 .site-title > a { text-decoration-color: #ffffff; text-decoration-thickness: 3px; }
 .site-title a:hover, 
 .site-title a:focus { color: rgba(255, 255, 255, 0.7); }
-.site-description { font-weight: 600; color: #ffffff; }
+.site-description { text-shadow: 0.75px 1px rgba(42, 42, 42, 1); font-weight: 600; color: #ffffff; }
 
 
 /*Nav*/
@@ -102,7 +103,7 @@ Color 4: #34595f;
     .site-header { padding-bottom: calc(6 * var(--global--spacing-vertical)); }
     .header-inner-wrapper { }
     .site-title { font-size: var(--branding--title--font-size); }
-    .site-description { font-size: var(--global--font-size-md); }
+    .site-description { font-size: var(--global--font-size-lg); }
     
     
     /*Nav*/
