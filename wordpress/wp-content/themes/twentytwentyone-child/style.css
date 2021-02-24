@@ -102,6 +102,11 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 /*Plugin customizations.*/
+/*General Testimonials*/
+.testimonial { padding-bottom: 60px; }
+.testimonial__title { clear: none; }
+
+
 /*WooCommerce*/
 .home #main [class*="woocommerce columns-"] { max-width: var(--responsive--alignwide-width); }
 
@@ -142,6 +147,15 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     .woocommerce-page ul.products::after, 
     .woocommerce-page ul.products::before { content: none; }
 }
+
+
+
+@media only screen and (min-width: 700px){  
+    /*Plugin customizations.*/
+    /*General Testimonials*/
+    .testimonial { padding-bottom: 0; }
+}
+
 
 
 @media only screen and (min-width: 822px){
