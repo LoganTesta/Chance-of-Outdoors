@@ -153,6 +153,8 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     /*Plugin customizations.*/
     /*WooCommerce*/  
     .woocommerce ul.products.columns-4 li.product { margin-left: 0; margin-right: 0; }
+    .woocommerce ul.products[class*="columns-"] li.product, 
+    .woocommerce-page ul.products[class*="columns-"] li.product { width: 50% !important; }
 }
 
 
@@ -161,6 +163,15 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     /*Plugin customizations.*/
     /*General Testimonials*/
     .testimonial { padding-bottom: 0; }
+}
+
+
+
+@media only screen and (min-width: 768px){  
+    /*Plugin customizations.*/
+    /*WooCommerce*/  
+    .woocommerce ul.products[class*="columns-"] li.product, 
+    .woocommerce-page ul.products[class*="columns-"] li.product { width: calc(100% / 4 - 16px) !important; }
 }
 
 
