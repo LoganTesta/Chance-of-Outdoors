@@ -141,11 +141,18 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     /*Plugin customizations.*/
     /*WooCommerce*/    
     .woocommerce ul.products { justify-content: space-between; }
-    .woocommerce ul.products.columns-4 li.product { width: 24% !important; margin-left: 0; margin-right: 0; }
     .woocommerce ul.products::after, 
     .woocommerce ul.products::before, 
     .woocommerce-page ul.products::after, 
     .woocommerce-page ul.products::before { content: none; }
+}
+
+
+
+@media only screen and (min-width: 668px){  
+    /*Plugin customizations.*/
+    /*WooCommerce*/  
+    .woocommerce ul.products.columns-4 li.product { margin-left: 0; margin-right: 0; }
 }
 
 
