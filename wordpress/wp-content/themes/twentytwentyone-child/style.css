@@ -99,6 +99,7 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 :root .has-gigantic-font-size { font-size: var(--global--font-size-xl); }
 .singular .entry-title,
 .entry-title { font-size: var(--global--font-size-lg); color: var(--color-2); }
+.singular .entry-header { margin-bottom: 0; border-bottom: 0; }
 
 
 /*Plugin customizations.*/
@@ -108,7 +109,7 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 /*WooCommerce*/
-.site-main .woocommerce-products-header { padding-bottom: calc(2 * var(--global--spacing-vertical)); margin-bottom: calc(3 * var(--global--spacing-vertical)) !important; border-bottom: 3px solid var(--global--color-border) !important; }
+.site-main .woocommerce-products-header { padding-bottom: calc(2 * var(--global--spacing-vertical)); margin-bottom: 0; }
 .page-title { font-size: var(--global--font-size-lg); }
 
 .home #main [class*="woocommerce columns-"] { max-width: var(--responsive--alignwide-width); margin-left: auto; margin-right: auto; }
@@ -172,6 +173,12 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     .woocommerce ul.products.columns-4 li.product { margin-left: 0; margin-right: 0; }
     .woocommerce ul.products[class*="columns-"] li.product, 
     .woocommerce-page ul.products[class*="columns-"] li.product { width: 50% !important; }
+}
+
+
+
+@media only screen and (min-width: 690px){  
+    .woocommerce-products-header { border-bottom: 0; }
 }
 
 
