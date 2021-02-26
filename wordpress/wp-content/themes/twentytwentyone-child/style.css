@@ -108,7 +108,19 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 /*WooCommerce*/
+.site-main .woocommerce-products-header { padding-bottom: calc(2 * var(--global--spacing-vertical)); margin-bottom: calc(3 * var(--global--spacing-vertical)) !important; border-bottom: 3px solid var(--global--color-border) !important; }
+.page-title { font-size: var(--global--font-size-lg); }
+
 .home #main [class*="woocommerce columns-"] { max-width: var(--responsive--alignwide-width); margin-left: auto; margin-right: auto; }
+
+
+
+@media only screen and (max-width: 768px){
+    /*Plugin customizations.*/
+    /*WooCommerce*/
+    .woocommerce .woocommerce-products-header__title.page-title, 
+    .woocommerce-page .woocommerce-products-header__title.page-title { margin-top: 0; margin-bottom: 0; }
+}
 
 
 
@@ -133,8 +145,13 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     /*General styling*/
     .singular .entry-title,
     .entry-title { font-size: var(--global--font-size-xl); }
-      
+    
+    
+    /*Plugin customizations.*/
+    /*WooCommerce*/
+    .page-title { font-size: var(--global--font-size-xl); }    
 }
+
 
 
 @media only screen and (min-width: 482px){  
