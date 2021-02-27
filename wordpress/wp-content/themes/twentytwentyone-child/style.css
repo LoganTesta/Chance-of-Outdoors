@@ -213,6 +213,14 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 
+@media only screen and (min-width: 769px){  
+    /*Plugin customizations.*/
+    /*WooCommerce*/  
+    .woocommerce ul.products li.product { margin-bottom: 60px; }
+}
+
+
+
 @media only screen and (min-width: 822px){
     /*Header*/
     .site-description { }
