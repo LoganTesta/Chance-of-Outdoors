@@ -52,7 +52,7 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     
     /*Header*/
     --branding--title--font-size-mobile: var(--heading--font-size-h4);
-    --branding--title--font-size: 3rem;  
+    --branding--title--font-size: 2.75rem;  
     
 }
 
@@ -143,7 +143,7 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     .header-inner-wrapper { }
     .site-branding { padding: 20px; }
     .site-title { font-size: var(--branding--title--font-size); }
-    .site-description { font-size: var(--global--font-size-lg); }
+    .site-description { font-size: 22px; }
     
     
     /*Nav*/
