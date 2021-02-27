@@ -66,6 +66,8 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 .site-branding { padding: 10px; border: 2px solid rgba(42, 42, 42, 1); border-radius: 3px; background-color: rgba(155, 118, 83, 0.94); }
 .site-header:not(.has-logo).has-title-and-tagline .site-branding { max-width: calc(100% - 130px) }
 .site-title { font-size: var(--branding--title--font-size-mobile); font-weight: 600; text-shadow: 1.5px 2px rgba(42, 42, 42, 1); color: rgba(255, 255, 255, 1); }
+.page-header { border-bottom: 0; }
+.site-main > * { margin-top: 0; margin-bottom: 0; }
 .site-title > a { text-decoration-color: #ffffff; text-decoration-thickness: 2px; font-weight: 600; }
 .site-title a:hover, 
 .site-title a:focus { color: rgba(255, 255, 255, 1); }
@@ -104,6 +106,11 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 .singular .entry-title,
 .entry-title { font-size: var(--global--font-size-lg); color: var(--color-2); }
 .singular .entry-header { margin-bottom: 0; border-bottom: 0; }
+
+
+/*Blog post pages*/
+.entry-footer { max-width: var(--responsive--alignwide-width); }
+.comments-area { max-width: var(--responsive--alignwide-width); }
 
 
 /*Plugin customizations.*/
