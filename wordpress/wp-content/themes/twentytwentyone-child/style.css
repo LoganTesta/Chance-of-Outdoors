@@ -102,6 +102,9 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 /*Footer*/
+.footer-navigation-wrapper li .svg-icon { transform: scale(1.2); }
+.footer-navigation-wrapper li .svg-icon:hover { transform: scale(1.5); }
+
 .site-footer > .site-info .site-name { font-size: var(--global--font-size-lg); }
 .site-footer > .site-info .copyright-info { margin-top: calc(0.5 * var(--global--spacing-vertical)); }   
 
