@@ -142,6 +142,11 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 .woocommerce-account #main .woocommerce { max-width: var(--responsive--alignwide-width); padding-left: 0; padding-right: 0; }
 
 
+/*Contact Form 7*/
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output { border-color: var(--color-1); }
+
+
 
 @media only screen and (max-width: 768px){
     /*Plugin customizations.*/
