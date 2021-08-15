@@ -21,4 +21,12 @@ add_action( 'after_setup_theme', 'outdoor_supply_store_setup' );
 
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=03092021", array( 'twenty-twenty-one-style' ) );
+    
+    //Add Slick.js
+    wp_enqueue_style( 'slick-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick.css', '1.8.1', true );   
+    wp_enqueue_style( 'slick-theme-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick-theme.css', '1.8.1', true );
+     
+    wp_enqueue_script( 'slick-slider-min-js', "" . get_stylesheet_directory_uri() . '/assets/javascript/slick.min.js', array('jquery'), '1.8.1', true );
+    wp_enqueue_script( 'slick-slider-init-js', "" . get_stylesheet_directory_uri() . '/assets/javascript/slick-init.js', array('jquery'), '1.8.1', true );
+        
 });
