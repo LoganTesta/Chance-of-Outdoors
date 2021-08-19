@@ -9,10 +9,75 @@
  * @since Twenty Twenty-One 1.0
  */
 
+$image1 = get_field( "slide_1_image" );
+$image2 = get_field( "slide_2_image" );
+$image3 = get_field( "slide_3_image" );
+$image4 = get_field( "slide_4_image" );
+$image5 = get_field( "slide_5_image" );
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    
+        <?php if ( is_front_page() ) { ?>
+            <div class="slick-slider">
+                <div class="slide">
+                    <div class="slide__title"><?php the_field( "slide_1_title" ); ?></div>
+                    <div class="slide__image-container">
+                        <img class="slide__image" src="<?php echo esc_url( $image1["url"] ); ?>" alt="<?php get_field( "slide_1_title" ); ?>" />
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__description">
+                            <?php echo the_field( "slide_1_description" ); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__title"><?php the_field( "slide_2_title" ); ?></div>
+                    <div class="slide__image-container">
+                        <img class="slide__image" src="<?php echo esc_url( $image2["url"] ); ?>" alt="<?php get_field( "slide_2_title" ); ?>" />
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__description">
+                            <?php echo the_field( "slide_2_description" ); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__title"><?php the_field( "slide_3_title" ); ?></div>
+                    <div class="slide__image-container">
+                        <img class="slide__image" src="<?php echo esc_url( $image3["url"] ); ?>" alt="<?php get_field( "slide_3_title" ); ?>" />
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__description">
+                            <?php echo the_field( "slide_3_description" ); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__title"><?php the_field( "slide_4_title" ); ?></div>
+                    <div class="slide__image-container">
+                        <img class="slide__image" src="<?php echo esc_url( $image4["url"] ); ?>" alt="<?php get_field( "slide_4_title" ); ?>" />
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__description">
+                            <?php echo the_field( "slide_4_description" ); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__title"><?php the_field( "slide_5_title" ); ?></div>
+                    <div class="slide__image-container">
+                        <img class="slide__image" src="<?php echo esc_url( $image5["url"] ); ?>" alt="<?php get_field( "slide_5_title" ); ?>" />
+                    </div>
+                    <div class="slide__content">
+                        <div class="slide__description">
+                            <?php echo the_field( "slide_5_description" ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header alignwide">
 			<?php get_template_part( 'template-parts/header/entry-header' ); ?>
