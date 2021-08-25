@@ -9,13 +9,14 @@ jQuery(document).ready(function($){
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
+        initialSlide: 1,
         arrows: true,
         dots: true,
         centerMode: true,
         centerPadding: "5%",
         autoplay: true,
-        autoplayspeed: 3000,
-        speed: 8000,
+        autoplayspeed: 4000,
+        speed: 2000,
         responsive: [
             {
                 breakpoint: 768,
