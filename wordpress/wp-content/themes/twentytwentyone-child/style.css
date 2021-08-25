@@ -134,19 +134,20 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 /*Slick.js and Advanced Custom Fields*/
  button:not(:hover):not(:active):not(.has-background) { background-color: transparent; }
  .slick-dots li button::before { width: 15px; height: 15px; border-radius: 2px; background-color: #000000; }
-.slick-slider { position: relative; }
-.slick-slider .slide { height: 400px; margin-left: 20px; margin-right: 20px; }
-.slide__title { }
+.slick-slider { position: relative; height: 440px; }
+.slick-slider .slick-list { }
+.slick-slider .slide { height: 440px; margin-left: 20px; margin-right: 20px; }
+.slide__title { padding-left: 20px; font-size: 24px; line-height: 1.4; }
 .slide__image-container { height: 280px; }
 .slide__image { display: block; width: 100%; height: 100%; object-fit: cover; }
 .slide__content { }
-.slide__description { }
+.slide__description { text-align: center; line-height: 1.4; }
 
 /*Arrows*/
 .slick-slider .slick-prev,
-.slick-slider .slick-next { position: absolute; top: 416px; z-index: 11; font-size: 24px; }
-.slick-slider .slick-prev { left: 20%; }
-.slick-slider .slick-next { right: 20%; }
+.slick-slider .slick-next { position: absolute; top: 456px; z-index: 11; font-size: 24px; }
+.slick-slider .slick-prev { left: 10%; }
+.slick-slider .slick-next { right: 10%; }
 
 
 /*WooCommerce*/
