@@ -30,4 +30,10 @@ jQuery(document).ready(function($){
     
     $(".slick-prev").html("");
     $(".slick-next").html("");
+    
+    $(window).on("resize", function(){
+        $(".slick-prev").html("");
+        $(".slick-next").html("");
+    });
+    
 });

@@ -244,6 +244,11 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 @media only screen and (min-width: 768px){    
     /*Plugin customizations.*/
+    /*Slick.js and Advanced Custom Fields*/
+    .slick-slider .slick-prev { left: 30%; }
+    .slick-slider .slick-next { right: 30%; }
+    
+    
     /*WooCommerce*/  
     .woocommerce ul.products[class*="columns-"] li.product, 
     .woocommerce-page ul.products[class*="columns-"] li.product { width: calc(100% / 4 - 16px) !important; }
@@ -287,11 +292,13 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
+    .slick-slider { height: 400px; }
+    .slick-slider .slide { height: 400px; }
     .slide__image-container { height: 320px; }
     
     /*Arrows*/
     .slick-slider .slick-prev,
-    .slick-slider .slick-next { }
+    .slick-slider .slick-next { top: 416px; }
     .slick-slider .slick-prev { left: 40%; }
     .slick-slider .slick-next { right: 40%; }
 }
