@@ -136,8 +136,8 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 .slick-dots li button::before { width: 15px; height: 15px; border-radius: 2px; background-color: #000000; }
 div.slick-dotted.slick-slider { position: relative; height: 440px; margin-bottom: 50px; }
 .slick-slider .slick-list { }
-.slick-slider .slide { height: 440px; margin-left: 20px; margin-right: 20px; }
-.slide__title { padding-left: 20px; font-size: 24px; line-height: 1.4; }
+.slick-slider .slide { position: relative; height: 440px; margin-left: 20px; margin-right: 20px; }
+.slide__title { padding: 10px 15px; text-align: center; font-size: 24px; line-height: 1.4; background-color: rgba(255, 255, 255, 0.9); }
 .slide__image-container { height: 280px; }
 .slide__image { display: block; width: 100%; height: 100%; object-fit: cover; }
 .slide__content { }
@@ -279,7 +279,7 @@ div.slick-dotted.slick-slider { position: relative; height: 440px; margin-bottom
 
 @media only screen and (min-width: 1200px){
     /*Header*/
-    .site-header { padding-top: calc(2.2 * var(--global--spacing-vertical)); padding-bottom: calc(8 * var(--global--spacing-vertical)); }
+    .site-header { padding-top: calc(2.4 * var(--global--spacing-vertical)); padding-bottom: calc(9 * var(--global--spacing-vertical)); }
     
     
     /*Content*/
@@ -292,13 +292,14 @@ div.slick-dotted.slick-slider { position: relative; height: 440px; margin-bottom
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
-    div.slick-dotted.slick-slider { height: 400px; }
-    .slick-slider .slide { height: 400px; }
-    .slide__image-container { height: 320px; }
+    div.slick-dotted.slick-slider { height: 365px; }
+    .slick-slider .slide { height: 365px; }
+    .slide__title { position: absolute; top: 12px; left: 20px; text-align: left; }
+    .slide__image-container { height: 300px; }
     
     /*Arrows*/
     .slick-slider .slick-prev,
-    .slick-slider .slick-next { top: 416px; }
-    .slick-slider .slick-prev { left: 40%; }
-    .slick-slider .slick-next { right: 40%; }
+    .slick-slider .slick-next { top: 380px; }
+    .slick-slider .slick-prev { left: 42%; }
+    .slick-slider .slick-next { right: 42%; }
 }

@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
         arrows: true,
         dots: true,
         centerMode: true,
-        centerPadding: "5%",
+        centerPadding: "12%",
         autoplay: true,
         autoplayspeed: 4000,
         speed: 2000,
