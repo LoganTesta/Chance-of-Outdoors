@@ -22,57 +22,57 @@ $image5 = get_field( "slide_5_image" );
         <?php if ( is_front_page() ) { ?>
             <div class="slick-slider">
                 <div class="slide">
-                    <div class="slide__title"><?php the_field( "slide_1_title" ); ?></div>
                     <div class="slide__image-container">
+                        <div class="slide__title"><?php the_field( "slide_1_title" ); ?></div>
                         <img class="slide__image" src="<?php echo esc_url( $image1["url"] ); ?>" alt="<?php get_field( "slide_1_title" ); ?>" />
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__description">
-                            <?php echo the_field( "slide_1_description" ); ?>
+                        <div class="slide__content">
+                            <div class="slide__description">
+                                <?php echo the_field( "slide_1_description" ); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="slide__title"><?php the_field( "slide_2_title" ); ?></div>
                     <div class="slide__image-container">
+                        <div class="slide__title"><?php the_field( "slide_2_title" ); ?></div>
                         <img class="slide__image" src="<?php echo esc_url( $image2["url"] ); ?>" alt="<?php get_field( "slide_2_title" ); ?>" />
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__description">
-                            <?php echo the_field( "slide_2_description" ); ?>
+                        <div class="slide__content">
+                            <div class="slide__description">
+                                <?php echo the_field( "slide_2_description" ); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="slide__title"><?php the_field( "slide_3_title" ); ?></div>
                     <div class="slide__image-container">
+                        <div class="slide__title"><?php the_field( "slide_3_title" ); ?></div>
                         <img class="slide__image" src="<?php echo esc_url( $image3["url"] ); ?>" alt="<?php get_field( "slide_3_title" ); ?>" />
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__description">
-                            <?php echo the_field( "slide_3_description" ); ?>
+                        <div class="slide__content">
+                            <div class="slide__description">
+                                <?php echo the_field( "slide_3_description" ); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="slide__title"><?php the_field( "slide_4_title" ); ?></div>
                     <div class="slide__image-container">
+                        <div class="slide__title"><?php the_field( "slide_4_title" ); ?></div>
                         <img class="slide__image" src="<?php echo esc_url( $image4["url"] ); ?>" alt="<?php get_field( "slide_4_title" ); ?>" />
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__description">
-                            <?php echo the_field( "slide_4_description" ); ?>
+                        <div class="slide__content">
+                            <div class="slide__description">
+                                <?php echo the_field( "slide_4_description" ); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="slide__title"><?php the_field( "slide_5_title" ); ?></div>
                     <div class="slide__image-container">
+                        <div class="slide__title"><?php the_field( "slide_5_title" ); ?></div>
                         <img class="slide__image" src="<?php echo esc_url( $image5["url"] ); ?>" alt="<?php get_field( "slide_5_title" ); ?>" />
-                    </div>
-                    <div class="slide__content">
-                        <div class="slide__description">
-                            <?php echo the_field( "slide_5_description" ); ?>
+                        <div class="slide__content">
+                            <div class="slide__description">
+                                <?php echo the_field( "slide_5_description" ); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
