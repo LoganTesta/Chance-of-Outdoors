@@ -146,7 +146,7 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
 
 /*Arrows*/
 .slick-slider .slick-prev,
-.slick-slider .slick-next { position: absolute; top: 476px; z-index: 11; }
+.slick-slider .slick-next { position: absolute; top: 477px; z-index: 11; width: 24px; height: 24px; font-size: 24px; }
 .slick-slider .slick-prev { left: 10%; }
 .slick-slider .slick-next { right: 10%; }
 .slick-slider .slick-prev::before, 
@@ -306,7 +306,7 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
     
     /*Arrows*/
     .slick-slider .slick-prev,
-    .slick-slider .slick-next { top: 360px; }
+    .slick-slider .slick-next { top: 362px; }
     .slick-slider .slick-prev { left: 42%; }
     .slick-slider .slick-next { right: 42%; }
 }
