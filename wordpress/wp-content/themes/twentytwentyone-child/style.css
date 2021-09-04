@@ -185,7 +185,7 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
 
 @media only screen and (min-width: 482px){
     /*Header*/
-    .site-header { padding-bottom: calc(6 * var(--global--spacing-vertical)); }
+    .site-header { padding-bottom: calc(5 * var(--global--spacing-vertical)); }
     .site-header:not(.has-logo).has-title-and-tagline .site-branding { max-width: none; }
     .header-inner-wrapper { }
     .site-branding { padding: 20px; }
@@ -249,9 +249,17 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
 
 
 
-@media only screen and (min-width: 768px){    
+@media only screen and (min-width: 768px){ 
+    /*Header*/
+    .site-header { padding-top: calc(1.5 * var(--global--spacing-vertical)); padding-bottom: calc(5 * var(--global--spacing-vertical)); }
+    
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
+    div.slick-dotted.slick-slider { height: 300px; }
+    .slide__image-container { height: 280px; }
+    
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next { top: 317px;}
     .slick-slider .slick-prev { left: 30%; }
     .slick-slider .slick-next { right: 30%; }
     
@@ -284,11 +292,7 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
 
 
 
-@media only screen and (min-width: 1200px){
-    /*Header*/
-    .site-header { padding-top: calc(2.4 * var(--global--spacing-vertical)); padding-bottom: calc(9 * var(--global--spacing-vertical)); }
-    
-    
+@media only screen and (min-width: 1200px) {
     /*Content*/
     .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) { max-width: var(--responsive--alignwide-width); }
 
@@ -299,9 +303,24 @@ div.slick-dotted.slick-slider { position: relative; height: 460px; margin-bottom
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
+    .slide__title { position: absolute; top: 12px; left: 20px; right: auto; border-radius: 2px; text-align: left; font-size: 24px; }
+    
+    /*Arrows*/
+    .slick-slider .slick-prev { left: 39%; }
+    .slick-slider .slick-next { right: 39%; }
+}
+
+
+
+@media only screen and (min-width: 1500px){
+    /*Header*/
+    .site-header { padding-top: calc(2.4 * var(--global--spacing-vertical)); padding-bottom: calc(9 * var(--global--spacing-vertical)); }
+    
+    
+    /*Plugin customizations.*/
+    /*Slick.js and Advanced Custom Fields*/
     div.slick-dotted.slick-slider { height: 345px; }
     .slick-slider .slide { }
-    .slide__title { position: absolute; top: 12px; left: 20px; right: auto; border-radius: 2px; text-align: left; font-size: 24px; }
     .slide__image-container { height: 320px; }
     
     /*Arrows*/
