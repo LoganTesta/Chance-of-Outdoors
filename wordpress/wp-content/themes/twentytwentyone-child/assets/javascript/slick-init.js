@@ -25,6 +25,15 @@ jQuery(document).ready(function($){
                     centerMode: false,
                 }
             },
+            {             
+                breakpoint: 1200,
+                settings: {                 
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: "22%",          
+                }
+            }
         ]
     });
     

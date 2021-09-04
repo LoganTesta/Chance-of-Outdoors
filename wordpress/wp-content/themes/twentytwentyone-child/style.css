@@ -292,6 +292,7 @@ div.slick-dotted.slick-slider { position: relative; height: 300px; margin-bottom
 
 @media only screen and (min-width: 1200px) {
     /*Header*/
+    .site-header { padding-top: calc(1.5 * var(--global--spacing-vertical)); padding-bottom: calc(5 * var(--global--spacing-vertical)); }
     .site-title { font-size: var(--branding--title--font-size); }
     .site-description { font-size: 22px; }
         
