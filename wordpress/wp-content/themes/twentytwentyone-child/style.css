@@ -295,9 +295,9 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 
 @media only screen and (min-width: 1200px) {
     /*Header*/
-    .site-header { padding-top: calc(1.5 * var(--global--spacing-vertical)); padding-bottom: calc(5 * var(--global--spacing-vertical)); }
-    .site-title { font-size: var(--branding--title--font-size); }
-    .site-description { font-size: 22px; }
+    .site-header { padding-top: calc(1 * var(--global--spacing-vertical)); padding-bottom: calc(4 * var(--global--spacing-vertical)); }
+    .site-title { font-size: calc(0.75 * var(--branding--title--font-size)); }
+    .site-description { font-size: 20px; }
         
     
     /*Content*/
@@ -310,10 +310,14 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
-    .slide__title { position: absolute; top: 12px; left: 20px; right: auto; border-radius: 2px; text-align: left; font-size: 24px; }
-    .slide__description { font-size: 20px; }
+    div.slick-dotted.slick-slider { height: 260px; }
+    .slide__image-container { height: 240px; }
+    .slide__title { position: absolute; top: 12px; left: 20px; right: auto; border-radius: 2px; text-align: left; }
+    .slide__description { font-size: 17px; }
     
     /*Arrows*/
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next { top: 277px; }
     .slick-slider .slick-prev { left: 39%; }
     .slick-slider .slick-next { right: 39%; }
 }
@@ -323,12 +327,16 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 @media only screen and (min-width: 1500px){
     /*Header*/
     .site-header { padding-top: calc(2.4 * var(--global--spacing-vertical)); padding-bottom: calc(9 * var(--global--spacing-vertical)); }
+    .site-title { font-size: var(--branding--title--font-size); }
+    .site-description { font-size: 22px; }
     
-    
+     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
     div.slick-dotted.slick-slider { height: 345px; }
     .slick-slider .slide { }
+    .slide__title { font-size: 24px; }
+    .slide__description { font-size: 20px; }
     .slide__image-container { height: 320px; }
     
     /*Arrows*/
