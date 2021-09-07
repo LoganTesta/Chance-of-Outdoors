@@ -133,7 +133,8 @@ body { font-size: 16px; }
 
 
 /*Slick.js and Advanced Custom Fields*/
- button:not(:hover):not(:active):not(.has-background) { background-color: transparent; }
+button:not(:hover):not(:active):not(.has-background) { background-color: transparent; }
+.primary-navigation-open .slick-slider { display: none; }
 div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom: 50px; }
 .slick-slider .slick-list { }
 .slick-slider .slide { position: relative; margin-left: 20px; margin-right: 20px; }
