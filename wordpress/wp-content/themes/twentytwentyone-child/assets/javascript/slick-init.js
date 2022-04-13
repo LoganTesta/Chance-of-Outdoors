@@ -45,4 +45,13 @@ jQuery(document).ready(function($){
         $(".slick-next").html("");
     });
     
+    $(".dropdown-icon.open").on("click", function(){
+        $(".slick-slider").slick('slickPause');
+    });
+    
+    $(".dropdown-icon.close").on("click", function(){
+        $(".slick-slider").slick('slickPlay');
+        $(".slick-slider").slick('refresh');
+    });
+    
 });
