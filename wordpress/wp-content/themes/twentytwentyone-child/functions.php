@@ -20,7 +20,7 @@ add_action( 'after_setup_theme', 'outdoor_supply_store_setup' );
 
 
 add_action( 'wp_enqueue_scripts', function() {
-    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=04082022", array( 'twenty-twenty-one-style' ) );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=04222022", array( 'twenty-twenty-one-style' ) );
     
     //Add Slick.js
     wp_enqueue_style( 'slick-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick.css', '1.8.1', true );   
