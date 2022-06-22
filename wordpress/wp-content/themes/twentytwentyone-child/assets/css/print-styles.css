@@ -14,6 +14,8 @@ html h2,
 html .h2 { font-size: var(--heading--font-size-h2); }
 html h3,
 html .h3 { font-size: var(--heading--font-size-h3); }
+html h4, 
+html .h4 { font-size: var(--heading--font-size-h4); }
 
 html a[href^="http"]::after { content: ""; }
 
@@ -39,4 +41,16 @@ nav.footer-navigation { display: block !important; }
     nav.primary-navigation a:link, 
     nav.primary-navigation a:visited, 
     nav.primary-navigation a { font-size: var(--primary-nav--font-size); font-weight: normal; text-decoration: none; }
+}
+
+
+
+@media only print and (min-width: 668px) {
+    .woocommerce ul.products[class*="columns-"] li.product, 
+    .woocommerce-page ul.products[class*="columns-"] li.product {
+        width: 50% !important;
+        padding: 0 2vw 3em 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
