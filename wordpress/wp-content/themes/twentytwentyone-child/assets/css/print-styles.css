@@ -10,9 +10,22 @@
 
 /***############### Website Specific Styles. ***/
 
+html h2, 
+html .h2 { font-size: var(--heading--font-size-h2); }
+html h3,
+html .h3 { font-size: var(--heading--font-size-h3); }
+
+html a[href^="http"]::after { content: ""; }
+
+
+/*Footer*/
+nav.footer-navigation { display: block !important; }
+
+
+
 @media only print and (min-width: 482px) {
     .site-branding { display: block; padding: 20px; margin-left: 40px; }
-    header.site-header { padding-top: calc(0.75 * var(--global--spacing-vertical)); }
+    header.site-header { padding-top: calc(0.75 * var(--global--spacing-vertical)); padding-bottom: calc(3 * var(--global--spacing-vertical)); }
     
     /*Nav*/
     nav.primary-navigation { display: block !important; }
