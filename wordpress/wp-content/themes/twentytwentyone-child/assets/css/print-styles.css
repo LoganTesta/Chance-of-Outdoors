@@ -14,6 +14,7 @@
 .woocommerce ul.products li.product { display: block; }
 .add_to_cart_button { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
 
+
 html h2, 
 html .h2 { font-size: var(--heading--font-size-h2); }
 html h3,
@@ -23,15 +24,24 @@ html .h4 { font-size: var(--heading--font-size-h4); }
 
 html a[href^="http"]::after { content: ""; }
 
+html .page-title {
+  font-size: var(--global--font-size-xl);
+}
+
 
 /*Footer*/
 nav.footer-navigation { display: block !important; }
+
+
+/*Blog page*/
+.site-main > article > .entry-footer { display: block !important; }
 
 
 
 @media only print and (min-width: 482px) {
     .site-branding { display: block; padding: 20px; margin-left: 40px; }
     header.site-header { padding-top: calc(0.75 * var(--global--spacing-vertical)); padding-bottom: calc(3 * var(--global--spacing-vertical)); }
+    
     
     /*Nav*/
     nav.primary-navigation { display: block !important; }
