@@ -15,6 +15,11 @@
 .add_to_cart_button { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
 
 
+html h1, 
+html .entry-title, 
+html .singular .entry-title, 
+html .page-title { font-size: var(--global--font-size-xl); font-weight: var(--heading--font-weight-page-title); }
+
 html h2, 
 html .h2 { font-size: var(--heading--font-size-h2); }
 html h3,
@@ -35,6 +40,10 @@ nav.footer-navigation { display: block !important; }
 
 /*Blog page*/
 .site-main > article > .entry-footer { display: block !important; }
+
+/*Plugin customizations.*/
+/*WooCommerce*/
+.return-to-shop .button { text-align: center; }
 
 
 
