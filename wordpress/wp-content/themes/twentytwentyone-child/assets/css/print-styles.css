@@ -12,7 +12,10 @@
 
 /* Prevent mid-item splitting onto two pages if possible */
 .woocommerce ul.products li.product { display: block; }
-.add_to_cart_button { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
+.add_to_cart_button,
+.woocommerce-info, 
+.woocommerce-message,
+.woocommerce-additional-fields__field-wrapper { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
 
 
 html h1, 
