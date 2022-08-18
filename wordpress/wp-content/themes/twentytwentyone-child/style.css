@@ -187,7 +187,7 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 
 
 /*Popup Box*/
-div.ays-pb-modal h2 { word-break: normal; }
+div.ays-pb-modal h2 { font-size: 28px; word-break: normal; }
 .ays-pb-modal hr:nth-of-type(1) { display: none; }
 
 .ays-pb-modal .modal-image { padding-top: 20px; }
@@ -287,6 +287,10 @@ div.ays-pb-modal h2 { word-break: normal; }
     .woocommerce-page ul.products[class*="columns-"] li.product { width: calc(100% / 4 - 16px) !important; }
     
     .woocommerce-checkout #main .woocommerce { max-width: var(--responsive--alignwide-width); padding-left: 0; padding-right: 0; }
+    
+    
+    /*Popup Box*/
+    div.ays-pb-modal h2 { font-size: var(--global--font-size-xl); word-break: normal; }
 }
 
 
