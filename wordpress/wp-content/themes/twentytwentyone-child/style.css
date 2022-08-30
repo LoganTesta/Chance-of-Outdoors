@@ -187,7 +187,7 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 
 
 /*Popup Box*/
-div.ays-pb-modal h2 { font-size: 28px; word-break: normal; }
+div.ays-pb-modal h2 { font-size: 24px; word-break: normal; }
 .ays-pb-modal hr:nth-of-type(1) { display: none; }
 
 .ays-pb-modal_2 .ays-pb-modal-close .ays_pb_material_close_icon { transition: 0.1s ease-in; }
@@ -230,6 +230,9 @@ div.ays-pb-modal h2 { font-size: 28px; word-break: normal; }
     .entry-title { font-size: var(--global--font-size-xl); }
     .page-title { font-size: var(--global--font-size-xl); }    
         
+    
+    /*Blog page*/
+    .blog .entry-title { font-size: calc(1.25 * var(--global--font-size-lg)); }
     
     /*Plugin customizations.*/
     /*WooCommerce*/   
@@ -292,7 +295,7 @@ div.ays-pb-modal h2 { font-size: 28px; word-break: normal; }
     
     
     /*Popup Box*/
-    div.ays-pb-modal h2 { font-size: var(--global--font-size-xl); word-break: normal; }
+    div.ays-pb-modal h2 { font-size: calc(1.25 * var(--global--font-size-lg)); word-break: normal; }
 }
 
 
