@@ -9,8 +9,8 @@ add_action( 'after_setup_theme', 'outdoor_supply_store_setup' );
 
 
 add_action( 'wp_enqueue_scripts', function() {
-    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=10082022", array( 'twenty-twenty-one-style' ) );
-    wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=10082022', array(), '', 'print' );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=07102023", array( 'twenty-twenty-one-style' ) );
+    wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=07102023', array(), '', 'print' );
     
     //Add Slick.js
     wp_enqueue_style( 'slick-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick.css', '1.8.1', true );   
