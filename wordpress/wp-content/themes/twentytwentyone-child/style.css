@@ -187,9 +187,10 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 
 
 /*Popup Box*/
-div.ays-pb-modal h2 { font-size: 24px; word-break: normal; }
+div.ays-pb-modal h2 { word-break: normal; }
 .ays-pb-modal hr:nth-of-type(1) { display: none; }
 
+.ays-pb-modal_2 .ays-pb-modal-close { top: 2px !important; right: 3% !important; font-size: 21px; }
 .ays-pb-modal_2 .ays-pb-modal-close .ays_pb_material_close_icon { transition: 0.1s ease-in; }
 .ays-pb-modal_2 .ays-pb-modal-close:hover .ays_pb_material_close_icon { fill: #9b7653 !important; transition: 0.1s ease-in; }
 .ays-pb-modal .modal-image { padding-top: 20px; }
@@ -295,7 +296,7 @@ div.ays-pb-modal h2 { font-size: 24px; word-break: normal; }
     
     
     /*Popup Box*/
-    div.ays-pb-modal h2 { font-size: calc(1.25 * var(--global--font-size-lg)); word-break: normal; }
+  
 }
 
 
