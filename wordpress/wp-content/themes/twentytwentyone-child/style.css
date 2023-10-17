@@ -166,8 +166,12 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 .slick-slider .slick-next::before { font-size: 24px; color: var(--color-1); }
 
 /*Dots*/
+.slick-slider .slick-dots { bottom: -42px; }
 .slick-slider .slick-dots li button::before { border-radius: 2px; background-color: var(--color-1); color: var(--color-1); }
 .slick-slider .slick-dots li.slick-active button::before { color: var(--color-1); }
+
+/*Add a pause and play button as an extra button.*/
+.pause-play-button { font-size: 26px; font-weight: bold; color: var(--color-1); }
 
 
 /*WooCommerce*/
@@ -359,7 +363,7 @@ div.ays-pb-modal h2 { word-break: normal; }
      
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
-    div.slick-dotted.slick-slider { height: 345px; }
+    div.slick-dotted.slick-slider { height: 372px; }
     .slick-slider .slide { }
     .slide__title { font-size: 24px; }
     .slide__description { font-size: 20px; }

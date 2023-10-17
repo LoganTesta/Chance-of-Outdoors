@@ -54,4 +54,6 @@ jQuery(document).ready(function($){
         $(".slick-slider").slick('refresh');
     });
     
+    $(".slick-dots").append("<div class='pause-play-button'>&#10073;&#10073;<div>");
+    
 });
