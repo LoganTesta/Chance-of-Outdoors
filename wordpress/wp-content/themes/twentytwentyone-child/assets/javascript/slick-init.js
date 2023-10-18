@@ -5,6 +5,8 @@
  */
 
 jQuery(document).ready(function($){
+    let play = true;
+    
     $(".slick-slider").slick({
         infinite: true,
         slidesToShow: 2,
@@ -15,7 +17,7 @@ jQuery(document).ready(function($){
         centerMode: true,
         centerPadding: "12%",
         autoplay: true,
-        autoplayspeed: 4500,
+        autoplaySpeed: 3000,
         speed: 1500,
         responsive: [
             {
@@ -55,5 +57,15 @@ jQuery(document).ready(function($){
     });
     
     $(".slick-dots").append("<div class='pause-play-button'>&#10073;&#10073;<div>");
+    $(".pause-play-button").on("click", function(){
+        play = !play;
+        if (play){
+            $(".slick-slider").slick("slickPlay");
+            $(".pause-play-button").html("<div class='pause-play-button'>&#10073;&#10073;<div>");
+        } else {
+            $(".slick-slider").slick("slickPause");
+            $(".pause-play-button").html("<div class='pause-play-button'>&#10148;<div>");
+        }
+    });
     
 });

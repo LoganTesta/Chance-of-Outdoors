@@ -171,7 +171,8 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 .slick-slider .slick-dots li.slick-active button::before { color: var(--color-1); }
 
 /*Add a pause and play button as an extra button.*/
-.pause-play-button { font-size: 26px; font-weight: bold; color: var(--color-1); }
+.slick-slider .pause-play-button { font-size: 26px; font-weight: bold; color: var(--color-1); cursor: pointer; }
+.slick-slider .pause-play-button:hover { }
 
 
 /*WooCommerce*/
