@@ -146,7 +146,7 @@ body { font-size: 16px; }
 /*Slick.js and Advanced Custom Fields*/
 button:not(:hover):not(:active):not(.has-background) { background-color: transparent; }
 .primary-navigation-open .slick-slider { display: none; }
-div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom: 50px; }
+div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom: 50px; }
 .slick-slider .slick-list { }
 .slick-slider .slide { position: relative; margin-left: 20px; margin-right: 20px; }
 .slide__title { position: absolute; top: 0; left: 0; right: 0; padding: 6px 15px; text-align: center; font-size: 18px;
@@ -285,7 +285,7 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
-    div.slick-dotted.slick-slider { height: 300px; }
+    div.slick-dotted.slick-slider { height: 327px; }
     .slide__image-container { height: 280px; }
     .slide__title { font-size: 22px; }
     .slide__description { }
@@ -344,7 +344,7 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Plugin customizations.*/
     /*Slick.js and Advanced Custom Fields*/
-    div.slick-dotted.slick-slider { height: 260px; }
+    div.slick-dotted.slick-slider { height: 287px; }
     .slide__image-container { height: 240px; }
     .slide__title { position: absolute; top: 12px; left: 20px; right: auto; border-radius: 2px; text-align: left; }
     .slide__description { font-size: 17px; }
