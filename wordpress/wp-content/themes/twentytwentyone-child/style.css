@@ -167,12 +167,15 @@ div.slick-dotted.slick-slider { position: relative; height: 240px; margin-bottom
 
 /*Dots*/
 .slick-slider .slick-dots { bottom: -42px; }
-.slick-slider .slick-dots li button::before { border-radius: 2px; background-color: var(--color-1); color: var(--color-1); }
-.slick-slider .slick-dots li.slick-active button::before { color: var(--color-1); }
+.slick-slider .slick-dots li button::before { border-radius: 2px; background-color: var(--color-1); color: var(--color-1); transition: 0.1s ease-in; }
+.slick-slider .slick-dots li button:hover::before, 
+.slick-slider .slick-dots li button:focus::before { opacity: 0.45; transition: 0.1s ease-in; }
+.slick-slider .slick-dots li.slick-active button::before { color: var(--color-1); transition: 0.1s ease-in; }
 
 /*Add a pause and play button as an extra button.*/
-.slick-slider .pause-play-button { font-size: 26px; font-weight: bold; color: var(--color-1); cursor: pointer; }
-.slick-slider .pause-play-button:hover { }
+.slick-slider .pause-play-button { display: block; width: 18px; margin-left: auto; margin-right: auto; opacity: 0.75; font-size: 26px; 
+                     font-weight: bold; color: var(--color-1); cursor: pointer; transition: 0.1s ease-in; }
+.slick-slider .pause-play-button:hover { opacity: 1; transition: 0.1s ease-in; }
 
 
 /*WooCommerce*/
