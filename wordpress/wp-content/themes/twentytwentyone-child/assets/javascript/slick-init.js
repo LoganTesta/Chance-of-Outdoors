@@ -17,8 +17,8 @@ jQuery(document).ready(function($){
         centerMode: true,
         centerPadding: "12%",
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1500,
+        autoplaySpeed: 4000,
+        speed: 2000,
         responsive: [
             {
                 breakpoint: 768,
