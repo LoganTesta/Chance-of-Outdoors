@@ -156,6 +156,9 @@ div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom
 .slide__content { position: absolute; bottom: 0; left: 0; right: 0; border-radius: 0 0 4px 4px;
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ); color: #ffffff; }
 .slide__description { padding: 5px 10px; text-align: center; }
+.slide__description a { color: #ffffff; text-decoration: none; }
+.slide__description a:hover { text-decoration: underline 1px dotted #ffffff; }
+.slide__description a:hover .slide__description-link-arrow { font-style: italic; }
 
 /*Arrows*/
 .slick-slider .slick-prev,
