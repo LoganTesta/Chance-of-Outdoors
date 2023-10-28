@@ -112,6 +112,9 @@ body { font-size: 16px; }
 /*Widget area*/
 .widget-area { margin-top: var(--global--spacing-vertical); }
 
+input[type="submit"] { transition: 0.1s ease-in; }
+input[type="submit"]:hover { transition: 0.1s ease-in; }
+
 
 /*Footer*/
 .footer-navigation-wrapper li .svg-icon { transform: scale(1.2); }
