@@ -8,6 +8,12 @@ function outdoor_supply_store_setup() {
 add_action( 'after_setup_theme', 'outdoor_supply_store_setup' );
 
 
+function register_new_menus() {
+    register_nav_menu( 'footer-nav-links', __( 'Footer Nav Links' ) );
+}
+add_action( 'init', 'register_new_menus' );
+
+
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=10272023", array( 'twenty-twenty-one-style' ) );
     wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=10272023', array(), '', 'print' );
