@@ -269,8 +269,8 @@ div.ays-pb-modal h2 { word-break: normal; }
 @media only screen and (min-width: 668px){  
     /*Footer*/
     .footer-content-section { }
-    .footer-section { float: left; width: 50%; }
-    
+    .footer-section { }
+
     
     /*Plugin customizations.*/
     /*WooCommerce*/  
@@ -358,7 +358,7 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Footer*/
     .footer-content-section { }
-    .footer-section { float: left; width: 33.333333%; }\
+    .footer-section { float: left; width: 33.333333%; }
 
     
     /*Search page*/

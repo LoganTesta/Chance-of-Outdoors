@@ -21,7 +21,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
                 <div class="footer-content-section">
                         <?php if ( has_nav_menu( 'footer-nav-links' ) ) : ?>
-                                <nav aria-label="<?php esc_attr_e( 'Footer Nav Links', 'twentytwentyone' ); ?>" class="footer-navigation footer-section">
+                                <nav aria-label="<?php esc_attr_e( 'Footer Nav Links', 'twentytwentyone' ); ?>" class="footer-navigation footer-section one">
                                         <ul class="footer-navigation-inner-wrapper">
                                                 <?php
                                                 wp_nav_menu(
@@ -41,7 +41,7 @@
                         <?php endif; ?>
 
                         <?php if ( has_nav_menu( 'footer' ) ) : ?>
-                                <nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation footer-section">
+                                <nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation footer-section two">
                                         <ul class="footer-navigation-wrapper">
                                                 <?php
                                                 wp_nav_menu(
@@ -61,7 +61,7 @@
                         <?php endif; ?>
                         
                         <?php if ( !empty( get_bloginfo( 'description' ) ) ) : ?>
-                                <div class="footer-navigation footer-section ">
+                                <div class="footer-navigation footer-section three">
                                         <div class="footer-section__description">
                                                 <?php echo get_bloginfo( 'description' ) ?>
                                         </div>
