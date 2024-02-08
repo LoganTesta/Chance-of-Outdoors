@@ -59,7 +59,16 @@
                                         </ul><!-- .footer-navigation-wrapper -->
                                 </nav><!-- .footer-navigation -->
                         <?php endif; ?>
-                       <div class="clear-both"></div>
+                        
+                        <?php if ( !empty( get_bloginfo( 'description' ) ) ) : ?>
+                                <div class="footer-navigation footer-section ">
+                                        <div class="footer-section__description">
+                                                <?php echo get_bloginfo( 'description' ) ?>
+                                        </div>
+                                </div>
+                        <?php endif; ?>
+                                
+                        <div class="clear-both"></div>
                 </div>
 		<div class="site-info">
 			<div class="site-name">
