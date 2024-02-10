@@ -122,6 +122,8 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 
 .footer-navigation-inner-wrapper { list-style-type: none; }
 .footer-navigation-inner-wrapper li { padding-bottom: 12px; font-size: 18px; }
+.footer-navigation-inner-wrapper li a { text-decoration: none; }
+.footer-navigation-inner-wrapper li.current-menu-item a { text-decoration: underline; }
 
 .footer-navigation-wrapper li .svg-icon { transform: scale(1.2); }
 .footer-navigation-wrapper li .svg-icon:hover { transform: scale(1.5); }

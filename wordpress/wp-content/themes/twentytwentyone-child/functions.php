@@ -15,8 +15,8 @@ add_action( 'init', 'register_new_menus' );
 
 
 add_action( 'wp_enqueue_scripts', function() {
-    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=02072024", array( 'twenty-twenty-one-style' ) );
-    wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=02072024', array(), '', 'print' );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=02092024", array( 'twenty-twenty-one-style' ) );
+    wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=02092024', array(), '', 'print' );
     
     //Add Slick.js
     wp_enqueue_style( 'slick-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick.css', '1.8.1', true );   
