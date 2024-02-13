@@ -209,6 +209,13 @@ div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom
 
 
 /*Popup Box*/
+@media screen and (max-width: 768px) {
+  div.ays-pb-modal_2 {
+    width: 60% !important;
+    max-width: 400px !important;
+  }
+}
+
 div.ays-pb-modal h2 { word-break: normal; }
 .ays-pb-modal hr:nth-of-type(1) { display: none; }
 
