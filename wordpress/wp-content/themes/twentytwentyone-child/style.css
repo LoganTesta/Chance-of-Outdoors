@@ -149,6 +149,7 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 
 /*Plugin customizations.*/
 /*General Testimonials*/
+.testimonials-container__heading { font-size: var(--heading--font-size-h3); }
 .testimonial { padding-bottom: 60px; }
 .testimonial:last-of-type { padding-bottom: 0; }
 .testimonial__title { clear: none; font-size: 24px; }
