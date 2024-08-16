@@ -7,6 +7,9 @@ include( plugin_dir_path(__FILE__) . "/general-testimonials.php" );
 
 
 $leadingTextPosition = get_option( 'general-testimonials-leading-text-position' );
+$titleLayout = get_option( 'general-testimonials-title-layout' );
+$contentLayout = get_option( 'general-testimonials-content-layout' );
+$starColor = get_option( 'general-testimonials-star-color' );
 
 $numberOfTestimonialsPerRow = ( int )( get_option( 'general-testimonials-testimonials-per-row' ) );
 $numberOfTestimonialsPerRowTablet = ( int )( get_option( 'general-testimonials-testimonials-per-row' ) );
@@ -52,22 +55,29 @@ if ( $generalTestimonialsFloatImageDirection === "left" ) {
 
 ?>
 
-.testimonials-container__heading { padding-bottom: 0; text-align: <?php echo $leadingTextPosition; ?>; }
+.testimonials-container__heading { padding-bottom: 0; font-size: 24px; text-align: <?php echo $leadingTextPosition; ?>; }
 .testimonials-container__inner-wrapper { padding-top: 30px; }
 
 .testimonial { padding-bottom: 50px; }
 .testimonial__image { display: block; width: <?php echo $testimonialImageWidthHeight; ?>px; height: <?php echo $testimonialImageWidthHeight; ?>px; margin-bottom: 8px; margin-left: auto; margin-right: auto; border-radius: <?php echo get_option( 'general-testimonials-border-radius' ); ?>px; }
-.testimonial__title { padding-bottom: 12px; }
-.testimonial__content { padding-bottom: 5px; }
-.testimonial__provided-name { font-size: 17px; font-weight: bold; }
-.testimonial__comma { font-size: 17px; }
-.testimonial__label { font-size: 17px; font-style: italic; }
-.testimonial__location { font-size: 17px; }
-.testimonial__date { font-size: 17px; }
-.testimonial__rating { font-size: 17px; } 
+.testimonial__title { padding-bottom: 12px; font-size: 20px; text-align: <?php echo $titleLayout; ?>; }
+.testimonial__body { text-align: <?php echo $contentLayout; ?>; }
+.testimonial__content { font-size: 16px; padding-bottom: 5px; }
+.testimonial__provided-name { font-size: 16px; font-weight: bold; }
+.testimonial__link { font-size: 16px; font-weight: bold; }
+.testimonial__comma { font-size: 16px; }
+.testimonial__label { font-size: 16px; font-style: italic; }
+.testimonial__location { font-size: 16px; }
+.testimonial__date { font-size: 16px; }
+.testimonial__rating { font-size: 16px; <?php if ( ! empty ( $starColor ) ) { echo "color: " . $starColor; } ?> } 
 
 .testimonials-container__inner-wrapper::after { content: ""; display: block; clear: both; }
-.testimonial__link { font-size: 17px; font-weight: bold; }
+.testimonial__link { font-size: 16px; font-weight: bold; }
+
+
+/*For individual event pages*/
+.general-testimonials-breadcrumbs__breadcrumb { padding-bottom: 20px; }
+.general-testimonials-breadcrumbs__breadcrumb-link { display: inline-block; }
 
 
 

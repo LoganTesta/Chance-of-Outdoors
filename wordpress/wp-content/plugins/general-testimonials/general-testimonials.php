@@ -48,22 +48,28 @@ add_action( 'admin_menu', 'gt_admin_menu' );
 function gt_register_settings() {
     add_option( 'general-testimonials-leading-text', "Customer Testimonials" );
     add_option( 'general-testimonials-leading-text-position', "center" );
+    add_option( 'general-testimonials-title-layout', "left" );
+    add_option( 'general-testimonials-content-layout', "left" );
     add_option( 'general-testimonials-image-width-height', "120" );
     add_option( 'general-testimonials-border-radius', "15" );
     add_option( 'general-testimonials-float-image-direction', "left" );
     add_option( 'general-testimonials-testimonials-per-row', "2" );
     add_option( 'general-testimonials-number-to-display', "" );
     add_option( 'general-testimonials-rating-scale', "0-5" );
+    add_option( 'general-testimonials-star-color', "" );
     add_option( 'general-testimonials-date-layout', "1" );
 
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-leading-text-position', 'gt_validatetextfield' );
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-title-layout', 'gt_validatetextfield' );
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-content-layout', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-image-width-height', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-border-radius', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-float-image-direction', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-testimonials-per-row', 'gt_validatetextfield' );  
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-number-to-display', 'gt_validatetextfield' );  
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-rating-scale', 'gt_validatetextfield' );  
+    register_setting( 'general-testimonials-settings-group', 'general-testimonials-star-color', 'gt_validatetextfield' );
     register_setting( 'general-testimonials-settings-group', 'general-testimonials-date-layout', 'gt_validatetextfield' );
 }
 add_action( 'admin_init', 'gt_register_settings' );
@@ -114,6 +120,24 @@ function gt_generate_settings_page() {
                 <input id="generalTestimonialsLeadingTextPosition2" class="general-testimonials-leading-text-position" name="general-testimonials-leading-text-position" type="radio" value="right" <?php if ( get_option( 'general-testimonials-leading-text-position' ) === "right" ) { echo 'checked="checked"'; } ?> />        
             </div>
             <div class="admin-input-container">
+                <span class="admin-input-container__label">Testimonial Title Position</span>   
+                <label class="" for="generalTestimonialsTitleLayout0">left</label>
+                <input id="generalTestimonialsTitleLayout0" class="general-testimonials-title-layout" name="general-testimonials-title-layout" type="radio" value="left" <?php if ( get_option( 'general-testimonials-title-layout' ) === "left" ) { echo 'checked="checked"'; } ?> />
+                <label class="" for="generalTestimonialsTitleLayout1">center</label>
+                <input id="generalTestimonialsTitleLayout1" class="general-testimonials-title-layout" name="general-testimonials-title-layout" type="radio" value="center" <?php if ( get_option( 'general-testimonials-title-layout' ) === "center" ) { echo 'checked="checked"'; } ?> />
+                <label class="" for="generalTestimonialsTitleLayout2">right</label>
+                <input id="generalTestimonialsTitleLayout2" class="general-testimonials-title-layout" name="general-testimonials-title-layout" type="radio" value="right" <?php if ( get_option( 'general-testimonials-title-layout' ) === "right" ) { echo 'checked="checked"'; } ?> />        
+            </div>
+            <div class="admin-input-container">
+                <span class="admin-input-container__label">Content Layout</span>   
+                <label class="" for="generalTestimonialsContentLayout0">left</label>
+                <input id="generalTestimonialsContentLayout0" class="general-testimonials-content-layout" name="general-testimonials-content-layout" type="radio" value="left" <?php if ( get_option( 'general-testimonials-content-layout' ) === "left" ) { echo 'checked="checked"'; } ?> />
+                <label class="" for="generalTestimonialsContentLayout1">center</label>
+                <input id="generalTestimonialsContentLayout1" class="general-testimonials-content-layout" name="general-testimonials-content-layout" type="radio" value="center" <?php if ( get_option( 'general-testimonials-content-layout' ) === "center" ) { echo 'checked="checked"'; } ?> />
+                <label class="" for="generalTestimonialsContentLayout2">right</label>
+                <input id="generalTestimonialsContentLayout2" class="general-testimonials-content-layout" name="general-testimonials-content-layout" type="radio" value="right" <?php if ( get_option( 'general-testimonials-content-layout' ) === "right" ) { echo 'checked="checked"'; } ?> />        
+            </div>
+            <div class="admin-input-container">
                 <label class="admin-input-container__label" for="general-testimonials-image-width-height">Image Width, Height (Max, 60-150px)</label>
                 <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-image-width-height" name="general-testimonials-image-width-height" type="number" value="<?php echo get_option( 'general-testimonials-image-width-height' ); ?>" min="60" max="150" />
                 <span class="admin-input-container__trailing-text">px</span>
@@ -121,7 +145,7 @@ function gt_generate_settings_page() {
             </div>
             <div class="admin-input-container">
                 <label class="admin-input-container__label" for="general-testimonials-border-radius">Image Border Radius</label>
-                <input id="generalTestimonialsImageWidthHeight" class="admin-input-container__input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" />
+                <input id="generalTestimonialsImageWidthHeight" class="admin-input-container__input medium-width-input general-testimonials-border-radius" name="general-testimonials-border-radius" type="text" value="<?php echo get_option( 'general-testimonials-border-radius' ); ?>" />
                 <span class="admin-input-container__trailing-text">px</span>
                 <span class="admin-input-container__default-settings-text">Default: 15px</span>
             </div>
@@ -144,8 +168,8 @@ function gt_generate_settings_page() {
                 <label class="admin-input-container__label--right" for="generalTestimonialsTestimonialsPerRow3">4</label>
             </div>
             <div class="admin-input-container">
-                <label class="admin-input-container__label" for="general-testimonials-number-to-display">Testimonials to Display (Empty: display all)</label>
-                <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-number-to-display" name="general-testimonials-number-to-display" type="number" value="<?php echo get_option( 'general-testimonials-number-to-display' ); ?>" />
+                <label class="admin-input-container__label" for="general-testimonials-number-to-display">Number of Testimonials to Display (Empty: display all)</label>
+                <input id="generalTestimonialsNumberToDisplay" class="admin-input-container__input smaller general-testimonials-number-to-display" name="general-testimonials-number-to-display" type="number" min="0" value="<?php echo get_option( 'general-testimonials-number-to-display' ); ?>" />
             </div>
             <div class="admin-input-container">
                 <span class="admin-input-container__label">Testimonials Rating Scale. Note: reducing the max rating will set any ratings above the new max value to empty.</span>         
@@ -155,6 +179,12 @@ function gt_generate_settings_page() {
                 <label class="admin-input-container__label--right" for="generalTestimonialsRatingScale1">0-5</label>
                 <input id="generalTestimonialsRatingScale2" class="general-testimonials-rating-scale" name="general-testimonials-rating-scale" type="radio" value="0-10" <?php if ( get_option( 'general-testimonials-rating-scale' ) === "0-10" ) { echo 'checked="checked"'; } ?> />
                 <label class="admin-input-container__label--right" for="generalTestimonialsRatingScale2">0-10</label>
+            </div>
+            <div class="admin-input-container">
+                <label class="admin-input-container__label" for="general-testimonials-star-color">Rating Star Color. Use a color name or a hex color with a # sign in front. Examples: gold or #ffd700</label>
+                <input id="generalTestimonialStarColor" class="admin-input-container__input medium-width-input general-testimonials-star-color" name="general-testimonials-star-color" type="text" value="<?php echo get_option( 'general-testimonials-star-color' ); ?>" />
+                <span class="admin-input-container__trailing-text"></span>
+                <span class="admin-input-container__default-settings-text">Default: #000000 (black)</span>
             </div>
             <div class="admin-input-container">
                 <span class="admin-input-container__label">Date Layout</span>         
@@ -535,7 +565,7 @@ function gt_load_testimonials( $postQuery ) {
             $testimonialRating = gt_get_testimonialrating( $post );
             $ratingScale = get_option( 'general-testimonials-rating-scale' );
             
-            if ( $ratingScale === "0-4") {
+            if ( $ratingScale === "0-4" ) {
                 if ( $testimonialRating === "0" ) {
                     $testimonialRating = "&#9734; &#9734; &#9734; &#9734;";
                 } else if ( $testimonialRating === "1" ) {
@@ -593,40 +623,43 @@ function gt_load_testimonials( $postQuery ) {
                 $pluginContainer .= '<img class="testimonial__image" src="' . $url_thumb . '" alt="' . $url_altText . '" />';
             }
             $pluginContainer .= '<h4 class="testimonial__title">' . $post->post_title . '</h4>';
-            if ( ! empty( $post->post_content ) ) {
-                $pluginContainer .= '<p class="testimonial__content">' . $post->post_content . '</p>';
-            }
-            if ( ! empty( $providedName ) ) {
-                if ( ! empty( $link ) ) {
-                    $pluginContainer .= '<span class="testimonial__provided-name"><a class="testimonial__link" href="' . $link . '" target="__blank">' . $providedName . '</a></span>';
-                } else {
-                    $pluginContainer .= '<span class="testimonial__provided-name">' . $providedName . '</span>';
+            $pluginContainer .= '<div class="testimonial__body">';
+                if ( ! empty( $post->post_content ) ) {
+                    $pluginContainer .= '<p class="testimonial__content">' . $post->post_content . '</p>';
                 }
-            }
-            if ( ! empty( $label ) ) {
                 if ( ! empty( $providedName ) ) {
-                    $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__label"> ' . $label . '</span>';
-                } else {
-                    $pluginContainer .= '<span class="testimonial__label">' . $label . '</span>';
+                    if ( ! empty( $link ) ) {
+                        $pluginContainer .= '<span class="testimonial__provided-name"><a class="testimonial__link" href="' . $link . '" target="__blank">' . $providedName . '</a></span>';
+                    } else {
+                        $pluginContainer .= '<span class="testimonial__provided-name">' . $providedName . '</span>';
+                    }
                 }
-            }
-            if ( ! empty( $testimonialLocation ) ) { 
-                if ( ! empty( $providedName ) || ! empty( $label ) ) {
-                    $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__location"> ' . $testimonialLocation . '</span>';
-                } else {
-                    $pluginContainer .= '<span class="testimonial__location">' . $testimonialLocation . '</span>';
+                if ( ! empty( $label ) ) {
+                    if ( ! empty( $providedName ) ) {
+                        $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__label"> ' . $label . '</span>';
+                    } else {
+                        $pluginContainer .= '<span class="testimonial__label">' . $label . '</span>';
+                    }
                 }
-            }
-            if ( ! empty( $testimonialDate ) ) { 
-                if ( ! empty( $providedName ) || ! empty( $label ) || ! empty( $testimonialLocation ) ) {
-                    $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__date"> ' . $testimonialDate . '</span>';
-                } else {
-                    $pluginContainer .= '<span class="testimonial__date">' . $testimonialDate . '</span>';
+                if ( ! empty( $testimonialLocation ) ) { 
+                    if ( ! empty( $providedName ) || ! empty( $label ) ) {
+                        $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__location"> ' . $testimonialLocation . '</span>';
+                    } else {
+                        $pluginContainer .= '<span class="testimonial__location">' . $testimonialLocation . '</span>';
+                    }
                 }
-            }    
-            if ( ! empty( $testimonialRating ) ) {
-                $pluginContainer .= '<div class="testimonial__rating">' . $testimonialRating . '</div>';
-            }
+                if ( ! empty( $testimonialDate ) ) { 
+                    if ( ! empty( $providedName ) || ! empty( $label ) || ! empty( $testimonialLocation ) ) {
+                        $pluginContainer .= '<span class="testimonial__comma">,</span><span class="testimonial__date"> ' . $testimonialDate . '</span>';
+                    } else {
+                        $pluginContainer .= '<span class="testimonial__date">' . $testimonialDate . '</span>';
+                    }
+                }    
+                if ( ! empty( $testimonialRating ) ) {
+                    $pluginContainer .= '<div class="testimonial__rating">' . $testimonialRating . '</div>';
+                }
+            $pluginContainer .= '<div class="clear-both"></div>'; 
+            $pluginContainer .= '</div>';
             $pluginContainer .= '</div>';
         }
         $count++;
