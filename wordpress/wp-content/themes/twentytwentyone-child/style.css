@@ -151,7 +151,7 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 /*General Testimonials*/
 .testimonial { padding-bottom: 60px; }
 .testimonial:last-of-type { padding-bottom: 0; }
-.testimonial__title { clear: none; }
+.testimonial__title { clear: none; font-size: 24px; }
 
 
 /*Slick.js and Advanced Custom Fields*/
