@@ -106,6 +106,10 @@ body { font-size: 16px; }
 .menu-button-container #primary-mobile-menu { color: var(--global--color-white); }
 
 
+/*Search*/
+.search-form__search-icon { display: block; width: 20px; height: 30px; cursor: pointer; }
+
+
 /*Content*/
 
 

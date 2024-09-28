@@ -40,5 +40,6 @@ $blog_info    = get_bloginfo( 'name' );
 			)
 		);
 		?>
+                <?php get_search_form(); ?>
 	</nav><!-- #site-navigation -->
 <?php endif; ?>
