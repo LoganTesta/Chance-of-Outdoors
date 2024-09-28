@@ -210,6 +210,12 @@ div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom
 
 
 /*Popup Box*/
+.ays-pb-modal h2 { font-family: var(--heading--font-family) !important; }
+.ays-pb-modal_2 .ays_pb_description > *, 
+.ays-pb-modal_2 .ays_pb_timer, 
+.ays-pb-modal_2 .ays_content_box p, 
+.ays-pb-modal_2 .ays-pb-dismiss-ad > button#ays_pb_dismiss_ad { font-family: var(--entry-content--font-family) !important; }
+
 @media screen and (max-width: 768px) {
   div.ays-pb-modal_2 {
     width: 60% !important;
