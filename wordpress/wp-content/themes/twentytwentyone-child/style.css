@@ -107,7 +107,7 @@ body { font-size: 16px; }
 
 
 /*Search*/
-.search-form__search-icon { display: block; width: 20px; height: 30px; cursor: pointer; }
+.search-form__search-icon { display: block; width: 30px; height: 30px; cursor: pointer; color: var(--color-1); }
 
 
 /*Content*/
