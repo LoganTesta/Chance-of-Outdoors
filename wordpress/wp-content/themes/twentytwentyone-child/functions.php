@@ -18,6 +18,11 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'child-style', get_stylesheet_uri() . "?mod=08152024V2", array( 'twenty-twenty-one-style' ) );
     wp_enqueue_style( 'print-styles', "" . get_stylesheet_directory_uri() . '/assets/css/print-styles.css?mod=09272024', array(), '', 'print' );
     
+    //Add Font-Awesome
+    wp_enqueue_style( 'fontawesome-css', "" . get_stylesheet_directory_uri() . '/assets/fontawesome/css/fontawesome.css', '', true );
+    wp_enqueue_style( 'brands-css', "" . get_stylesheet_directory_uri() . '/assets/fontawesome/css/brands.css', '', true );
+    wp_enqueue_style( 'solid-css', "" . get_stylesheet_directory_uri() . '/assets/fontawesome/css/solid.css', '', true );
+    
     //Add Slick.js
     wp_enqueue_style( 'slick-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick.css', '1.8.1', true );   
     wp_enqueue_style( 'slick-theme-css', "" . get_stylesheet_directory_uri() . '/assets/css/slick-theme.css', '1.8.1', true );
