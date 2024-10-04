@@ -109,7 +109,7 @@ body { font-size: 16px; }
 /*Search*/
 .search-controls { display: none; }
 .search-form.show .search-controls { display: block; }
-.search-form__search-icon { display: block; width: 30px; height: 30px; cursor: pointer; color: var(--color-1); }
+.search-form__search-icon { position: absolute; top: 18px; right: -97px; cursor: pointer; color: #ffffff; }
 
 
 /*Content*/
@@ -267,6 +267,11 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     .menu-button-container { display: none; }
     .mobile-title-container { display: none; }
+    
+    
+    /*Search*/
+    .search-form__search-icon { top: 15px; right: -46px; }
+    
     
     /*General styling*/
     .singular .entry-title,

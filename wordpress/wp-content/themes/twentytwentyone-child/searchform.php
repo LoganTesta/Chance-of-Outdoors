@@ -12,8 +12,8 @@
     </div>
     <div class="input-container">
         <div class="search-form__search" id="searchFormSearch">
-            <div class="search-form__search-icon" id="searchFormSearchIcon"></div>
-            <i class="fa-solid fa-magnifying-glass search-form__search-icon"></i>
+            <div class="fa-solid fa-magnifying-glass search-form__search-icon" id="searchFormSearchIcon"></div>
+
             <div class="search-form__close-search-icon" id="searchFormCloseSearchIcon"></div>
         </div>
     </div>
