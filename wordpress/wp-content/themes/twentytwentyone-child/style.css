@@ -108,8 +108,8 @@ body { font-size: 16px; }
 
 /*Search*/
 .search-controls { display: none; }
-.search-form.show .search-controls { display: block; }
-.search-form__search-icon { position: absolute; top: 18px; right: -97px; cursor: pointer; color: #ffffff; }
+.search-form.show .search-controls { display: block; position: relative; top: 70px; }
+.search-form__search-icon { position: absolute; top: 18px; right: 97px; cursor: pointer; color: #ffffff; }
 
 
 /*Content*/
@@ -271,6 +271,7 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Search*/
     .search-form__search-icon { top: 15px; right: -46px; }
+    .search-form.show .search-controls { top: 20px; }
     
     
     /*General styling*/
