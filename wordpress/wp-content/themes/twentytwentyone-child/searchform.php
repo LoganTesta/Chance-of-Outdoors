@@ -2,18 +2,15 @@
 
 ?>
 
-<form role="search" class="search-form" id="searchForm" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-    <div class="input-container search-controls">
-        <label class="search-form__label" for="s"></label>
-        <input type="search" class="search-form__input" name="s" placeholder="Search here..." value="<?php echo esc_attr( get_search_query() ); ?>">
-    </div> 
-    <div class="input-container search-controls">
-        <button type="submit" class="search-form__button">Search</button>
+<form role="search" method="get" action=<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
+    <label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
+    <div class="wp-block-search__inside-wrapper ">
+        <input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="<?php echo esc_attr( get_search_query() ); ?>" type="search" name="s" required="">
+        <button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button>
     </div>
     <div class="input-container">
         <div class="search-form__search" id="searchFormSearch">
             <div class="fa-solid fa-magnifying-glass search-form__search-icon" id="searchFormSearchIcon"></div>
-
             <div class="search-form__close-search-icon" id="searchFormCloseSearchIcon"></div>
         </div>
     </div>
