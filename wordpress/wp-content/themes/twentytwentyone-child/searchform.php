@@ -2,10 +2,9 @@
 
 ?>
 
-<form role="search" method="get" action=<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-    <label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
-    <div class="wp-block-search__inside-wrapper ">
-        <input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="<?php echo esc_attr( get_search_query() ); ?>" type="search" name="s" required="">
+<form id="searchForm" role="search" method="get" action=<?php echo esc_url( home_url( '/' ) ); ?>" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search search-form">
+    <div class="wp-block-search__inside-wrapper search-controls">
+        <input class="wp-block-search__input" id="wp-block-search__input" placeholder="" value="<?php echo esc_attr( get_search_query() ); ?>" type="search" name="s" required="">
         <button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button>
     </div>
     <div class="input-container">
