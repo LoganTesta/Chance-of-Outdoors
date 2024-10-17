@@ -238,6 +238,30 @@ div.ays-pb-modal h2 { word-break: normal; }
 .ays-pb-modal .modal-image { padding-top: 20px; }
 
 
+/*Lightweight Cookie Notice*/
+#daextlwcnf-cookie-notice-container #daextlwcnf-cookie-notice-button-1 {
+    border: 1px solid var(--color-1) !important;
+    color: var(--color-1) !important;
+}
+
+#daextlwcnf-cookie-notice-container #daextlwcnf-cookie-notice-button-2 {
+    border: 1px solid var(--color-1) !important;
+    background: none !important;
+    background-color: var(--color-1) !important;
+}
+
+#daextlwcnf-cookie-settings-container #daextlwcnf-cookie-settings-button-1 {
+    border: 1px solid var(--color-1) !important;
+    color: var(--color-1) !important;
+}
+
+#daextlwcnf-cookie-settings-container #daextlwcnf-cookie-settings-button-2 {
+    border: 1px solid var(--color-1) !important;
+    background: none !important;
+    background-color: var(--color-1) !important;
+}
+
+
 
 @media only screen and (max-width: 768px){
     /*Plugin customizations.*/
