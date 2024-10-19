@@ -261,6 +261,11 @@ div.ays-pb-modal h2 { word-break: normal; }
     background-color: var(--color-1) !important;
 }
 
+#daextlwcnf-revisit-cookie-consent-container.daextlwcnf-revisit-consent-trigger {
+    background: none !important;
+    background-color: var(--color-1) !important;
+}
+
 
 
 @media only screen and (max-width: 768px){
