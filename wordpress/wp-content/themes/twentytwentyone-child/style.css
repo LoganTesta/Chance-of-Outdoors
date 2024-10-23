@@ -239,6 +239,33 @@ div.ays-pb-modal h2 { word-break: normal; }
 
 
 /*Lightweight Cookie Notice*/
+@media only screen and (max-width: 700px), screen and (max-height: 640px) {
+    
+    div#daextlwcnf-cookie-settings-container {
+        top: 10% !important;
+        width: 220px !important;
+        height: 80% !important;
+    }
+    
+    #daextlwcnf-cookie-settings-blurred-header {
+        display: none;
+    }
+    
+    div#daextlwcnf-cookie-settings-header {
+        width: auto !important;
+    }
+
+    div#daextlwcnf-cookie-settings-title {
+        line-height: 34px !important;
+    }
+    
+    #daextlwcnf-cookie-settings-blurred-footer {
+        display: none;
+    }
+   
+}
+
+
 #daextlwcnf-cookie-notice-container #daextlwcnf-cookie-notice-button-1 {
     border: 1px solid var(--color-1) !important;
     color: var(--color-1) !important;
