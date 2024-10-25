@@ -148,6 +148,10 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 .singular .entry-header { margin-bottom: 0; border-bottom: 0; }
 
 
+/*Search page*/
+.search-results .post-thumbnail .wp-post-image { max-width: 300px !important; margin: 30px 0 30px 0; }
+
+
 /*Blog post pages*/
 .entry-footer { max-width: var(--responsive--alignwide-width); }
 .comments-area { max-width: var(--responsive--alignwide-width); }
@@ -339,6 +343,12 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Blog page*/
     .blog .entry-title { font-size: calc(1.25 * var(--global--font-size-lg)); }
+    
+    
+    /*Search page*/
+    .search-results .entry-title { font-size: calc(1.25 * var(--global--font-size-lg)); } 
+    .search-results .site-main > article > .entry-footer { padding-top: 0; margin-top: 0; }
+    
     
     /*Plugin customizations.*/
     /*WooCommerce*/   
