@@ -149,6 +149,8 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 
 
 /*Search page*/
+.search-results .page-header { padding-bottom: 50px; }
+.search-results .site-main > article > .entry-footer { padding-top: 0; padding-bottom: 50px; margin-top: 0; }
 .search-results .post-thumbnail .wp-post-image { max-width: 300px !important; margin: 30px 0 30px 0; }
 
 
@@ -347,7 +349,6 @@ div.ays-pb-modal h2 { word-break: normal; }
     
     /*Search page*/
     .search-results .entry-title { font-size: calc(1.25 * var(--global--font-size-lg)); } 
-    .search-results .site-main > article > .entry-footer { padding-top: 0; margin-top: 0; }
     
     
     /*Plugin customizations.*/
