@@ -9,8 +9,8 @@
     </div>
     <div class="input-container">
         <div class="search-form__search" id="searchFormSearch">
-            <div class="fa-solid fa-magnifying-glass search-form__search-icon" id="searchFormSearchIcon"></div>
-            <div class="search-form__close-search-icon" id="searchFormCloseSearchIcon"></div>
+            <div class="fa-solid fa-magnifying-glass search-form__search-icon" id="searchFormSearchIcon" role="button" tabindex="0"></div>
+            <div class="search-form__close-search-icon" id="searchFormCloseSearchIcon" role="button" tabindex="0"></div>
         </div>
     </div>
 </form>

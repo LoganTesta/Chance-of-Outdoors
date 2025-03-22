@@ -110,6 +110,8 @@ body { font-size: 16px; }
 .search-controls { display: none; }
 .search-form.show .search-controls { display: block; position: relative; top: 70px; }
 .search-form__search-icon { position: absolute; top: 18px; right: 92px; cursor: pointer; color: #ffffff; }
+.search-form__search-icon:focus-visible { outline: 2px solid var(--color-1); }
+.search-form__close-search-icon:focus-visible { outline: 2px solid var(--color-1); }
 
 
 /*Content*/
