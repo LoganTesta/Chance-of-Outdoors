@@ -63,6 +63,11 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 /*General Theme styling*/
 body { font-size: 16px; }
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible,
+body .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) { outline: 2px solid var(--color-1); outline-offset: 2px; }
 .site-content { position: relative; }
 .post-thumbnail, 
 .entry-content .wp-audio-shortcode, 
@@ -110,9 +115,9 @@ body { font-size: 16px; }
 .search-controls { display: none; }
 .search-form.show .search-controls { display: block; position: relative; top: 70px; }
 .search-form .search-form__search-icon { display: block; position: absolute; top: 18px; right: 92px; cursor: pointer; color: #ffffff; }
-.search-form .search-form__search-icon:focus-visible { outline: 2px solid var(--color-1); }
+.search-form .search-form__search-icon:focus-visible { outline: 2px solid var(--color-1); outline-offset: 2px; }
 .search-form .search-form__close-search-icon { display: none; position: absolute; top: 18px; right: 92px; cursor: pointer; color: #ffffff; }
-.search-form .search-form__close-search-icon:focus-visible { outline: 2px solid var(--color-1); }
+.search-form .search-form__close-search-icon:focus-visible { outline: 2px solid var(--color-1); outline-offset: 2px; }
 
 #searchForm.show .search-form__search-icon { display: none; }
 #searchForm.show .search-form__close-search-icon { display: block; }
