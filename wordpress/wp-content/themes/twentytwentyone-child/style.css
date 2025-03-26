@@ -199,7 +199,7 @@ div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom
 
 /*Arrows*/
 .slick-slider .slick-prev,
-.slick-slider .slick-next { position: absolute; top: 257px; z-index: 11; width: 24px; height: 24px; font-size: 24px; }
+.slick-slider .slick-next { position: absolute; top: 257px; z-index: 11; width: 24px; height: 20px; font-size: 24px; }
 .slick-slider .slick-prev { left: 10%; }
 .slick-slider .slick-next { right: 10%; }
 .slick-slider .slick-prev::before, 
@@ -219,8 +219,10 @@ div.slick-dotted.slick-slider { position: relative; height: 267px; margin-bottom
 .slick-slider .slick-dots li.slick-active button::before { color: var(--color-1); transition: 0.1s ease-in; }
 
 /*Add a pause and play button as an extra button.*/
-.slick-slider #pausePlayButton { display: block; width: 18px; height: 44px; padding: 0; border: 0; margin-left: auto; margin-right: auto; opacity: 0.75; font-size: 26px; 
-                     font-weight: bold; color: var(--color-1); cursor: pointer; transition: 0.1s ease-in; }
+.pause-play-button-container { position: relative; top: 6px; }
+.slick-slider #pausePlayButton { display: block; width: 24px; height: 44px; padding: 0; border: 0; 
+                                 margin-left: auto; margin-right: auto; outline-offset: 0; 
+                                 opacity: 0.75; font-size: 26px; font-weight: bold; color: var(--color-1); cursor: pointer; transition: 0.1s ease-in; }
 .slick-slider #pausePlayButton:hover { opacity: 1; transition: 0.1s ease-in; }
 
 

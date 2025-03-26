@@ -56,15 +56,15 @@ jQuery(document).ready(function($){
         $(".slick-slider").slick('refresh');
     });
     
-    $(".slick-dots").append("<button id='pausePlayButton' class='pause-play-button'>&#10073;&#10073;</button>");
+    $(".slick-dots").append("<div class='pause-play-button-container'><button id='pausePlayButton' class='pause-play-button'>&#10073;&#10073;</button></div>");
     $(".pause-play-button").on("click", function(){
         play = !play;
         if (play){
             $(".slick-slider").slick("slickPlay");
-            $(".pause-play-button").html("<button id='pausePlayButton' class='pause-play-button'>&#10073;&#10073;</button>");
+            $(".pause-play-button").html("<div class='pause-play-button-container'><button id='pausePlayButton' class='pause-play-button'>&#10073;&#10073;</button></div>");
         } else {
             $(".slick-slider").slick("slickPause");
-            $(".pause-play-button").html("<button id='pausePlayButton' class='pause-play-button'>&#10148;</button>");
+            $(".pause-play-button").html("<div class='pause-play-button-container'><button id='pausePlayButton' class='pause-play-button'>&#10148;</button></div>");
         }
     });
     
