@@ -18,7 +18,7 @@ html { box-sizing: border-box; text-size-adjust: 100%; -webkit-text-size-adjust:
 *, *:before, *:after { box-sizing: inherit; }
 
 /* General Resuable Classes */
-.sr-only { display: block; width: 0; height: 0; opacity: 0; }
+.hidden-sr-only { display: block; clip-path: polygon(0 0, 0 0, 0 0, 0 0); overflow: hidden; width: 1px; height: 1px; padding: 0; margin: 0; border: 0; }
 .width-100-percent { width: 100%; }
 .clear-both { clear: both; }
 
