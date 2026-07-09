@@ -336,7 +336,7 @@ function gt_url_custom_metabox() {
 //Save user provided field data.
 function gt_save_custom_testimonialprovidedname( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimonialprovidedname'] ) ) {
         if ( $nonceToVerify ) {
@@ -356,7 +356,7 @@ function gt_get_testimonialprovidedname( $post ) {
 
 function gt_save_custom_testimoniallabel( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimoniallabel'] ) ) {
         if ( $nonceToVerify ) {
@@ -376,7 +376,7 @@ function gt_get_testimoniallabel( $post ) {
 
 function gt_save_custom_testimoniallocation( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimoniallocation'] ) ) {
         if ( $nonceToVerify ) {
@@ -396,7 +396,7 @@ function gt_get_testimoniallocation( $post ) {
 
 function gt_save_custom_url( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimonialurl'] ) ) {
         if ( $nonceToVerify ) {
@@ -416,7 +416,7 @@ function gt_get_url( $post ) {
 
 function gt_save_testimonialdate( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimonialdate'] ) ) {
         if ( $nonceToVerify ) {
@@ -436,7 +436,7 @@ function gt_get_testimonialdate( $post ) {
 
 function gt_save_testimonialrating( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimonialrating'] ) ) {
         if ( $nonceToVerify ) {
@@ -456,7 +456,7 @@ function gt_get_testimonialrating( $post ) {
 
 function gt_save_custom_order( $post_id ) {
     global $post;
-    $nonceToVerify = check_admin_referer( 'settings_group_nonce_save', 'settings_group_nonce' );
+    $nonceToVerify = wp_verify_nonce( 'settings_group_nonce_save' );
     
     if ( isset( $_POST['testimonialorder'] ) ) {
         if ( $nonceToVerify ) {
