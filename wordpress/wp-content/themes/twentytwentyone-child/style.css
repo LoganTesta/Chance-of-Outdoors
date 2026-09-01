@@ -62,6 +62,7 @@ Color 4: #34595f     (52, 89, 95)     dark blue-green
 
 
 /*General Theme styling*/
+html { scroll-behavior: smooth; }
 body { font-size: 16px; }
 a:focus,
 a:focus-visible,
@@ -134,8 +135,11 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 
 
 /*Footer*/
+.site-footer { position: relative; }
 .footer-content-section { }
 .footer-section { text-align: center; }
+
+.back-to-top { position: absolute; top: 15px; right: 15px; font-size: 32px; cursor: pointer; text-decoration: none; }
 
 .footer-navigation-inner-wrapper { list-style-type: none; }
 .footer-navigation-inner-wrapper li { padding-bottom: 12px; font-size: 18px; }
