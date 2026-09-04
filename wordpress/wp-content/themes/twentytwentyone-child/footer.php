@@ -19,7 +19,7 @@
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-            <a href="#" class="back-to-top">&#8593;</div>
+            <a href="#" id="backToTop" class="back-to-top">&#8593;</div>
                 <div class="footer-content-section">
                         <?php if ( has_nav_menu( 'footer-nav-links' ) ) : ?>
                                 <nav aria-label="<?php esc_attr_e( 'Footer Nav Links', 'twentytwentyone' ); ?>" class="footer-navigation footer-section one">

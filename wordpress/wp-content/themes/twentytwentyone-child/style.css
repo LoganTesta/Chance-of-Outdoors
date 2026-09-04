@@ -139,7 +139,7 @@ input[type="submit"]:hover { transition: 0.1s ease-in; }
 .footer-content-section { }
 .footer-section { text-align: center; }
 
-.back-to-top { position: absolute; top: 15px; right: 15px; font-size: 32px; cursor: pointer; text-decoration: none; }
+.back-to-top { display: none; position: fixed; bottom: 25px; right: 50px; font-size: 32px; cursor: pointer; text-decoration: none; }
 
 .footer-navigation-inner-wrapper { list-style-type: none; }
 .footer-navigation-inner-wrapper li { padding-bottom: 12px; font-size: 18px; }

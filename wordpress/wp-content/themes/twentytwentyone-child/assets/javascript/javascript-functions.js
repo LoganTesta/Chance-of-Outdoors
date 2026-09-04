@@ -26,4 +26,19 @@ window.addEventListener("load", function() {
         document.getElementById("searchForm").classList.toggle("show");
     }
     
+    
+    /*Back to Top Button*/
+    let backToTop = document.getElementById("backToTop")
+            
+    window.onscroll = function(){ setScroll() };
+    
+    function setScroll() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            backToTop.style.display = "block";
+        } else {
+            backToTop.style.display = "none";
+        }
+    }
+    
+    
 }, "false");
